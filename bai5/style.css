@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+}
+nav{
+    background-color: #0c4ca3;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+li{
+    padding: 15px;
+}
+
+.border{
+    border-right: 1px solid grey;
+}
+
+.danhmuc-lienket{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Roboto, Arial, Tahoma;
+}
+.qc{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    border-bottom: 5px solid #f1f1f2;
+}
+
+.tintuc{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    border-bottom: 3px solid lightgray;
+}
