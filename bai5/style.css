@@ -1,0 +1,118 @@
+body{
+margin: 0px;
+}
+nav{
+background-color: #0c4ca3;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+li{
+    padding: 15px;
+}
+
+
+.border{
+border-right: 1px solid grey;
+}
+
+.danhmuc-lienket{
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-family: Roboto, Arial, Tahoma;
+}
+.qc{
+display: flex;
+justify-content: space-between;
+    width: 1200px;
+    margin: auto ;
+
+}
+header{
+border-bottom: 5px solid #f1f1f2;
+}
+
+.tintuc{
+display: flex;
+justify-content: space-between;
+    width: 1200px;
+    margin: auto ;
+
+}
+h1{
+    border-bottom: 3px solid lightgray;
+    font-size: 25;
+    color: blue;
+    border-bottom: 2px solid gray;
+    width: 1200px;
+    margin: 20px auto;
+
+}
+
+.banner{
+    width: 1200px;
+    margin: auto;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav li{
+    padding: 15px;
+}
+
+.tintuc-1{
+    padding-left: 18px;
+    margin: 0;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.tintuc-anh{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    margin-left: 200px;
+}
+
+.thongbao{
+    width: 1800px;
+    background: lightgray;
+    padding: 40px;
+    border: 1px solid #ddd;
+    display: flex;
+}
+
+.thongbao p{
+    color: blue;
+    font-size: 170%;
+    border-bottom: 2px solid gray;
+
+}
+
+.thongtintuyensinh{
+    display: flex;
+    justify-content: center;
+}
+
+.hdsv{
+    display: flex;
+    justify-content: center;
+}
+
+.doitac{
+    display: flex;
+    justify-content: center;
+}
+
+.end{
+    display: flex;
+    justify-content: center;
+}

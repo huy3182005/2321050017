@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 4 CSS</title>
+    <style>
+        p{/* tên thẻ*/
+            color: pink;
+            background-color: black;        
+        }
+
+        #title{/* id*/
+                color: coral;
+            }
+        .title2{/* class */
+            color: crimson;
+        }
+        h2{
+            color: red;
+            background-color: blue;
+        }
+
+        .box1{
+            background-color: green;
+        }
+        .box2{
+            background-color: red;
+            /* 1 gtri (cách xung quanh = giá trị của margin*/
+            /*2 gtri: gtri đầu là trên dưới | giá trị sau là trái phải*/
+            /*4 gtri: trên -> phải->dưới->trái*/
+            /*margin: 50px 10px 100px 30px;*/
+            width: 50%;
+            margin:50px auto;/*căn khối ra giữa*/
+            padding: 100px;
+        }
+        .box3{
+            background-color: yellow;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color: blue; font-size: xx-large; background-color: orange;">Inline Style</h1>
+    <p id="title">internal style</p>
+    <p style="background-color: brown;">black pink</p>
+    <h1 class="title2">vi du ve class</h1>
+    <h2>vi du ve do uu tien</h2>
+
+    <div class="box1">box1</div>
+    <div class="box2">box1</div>
+    <div class="box3">box1</div>
+
+
+</body>
+
+</html>
