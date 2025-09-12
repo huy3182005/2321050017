@@ -1,0 +1,142 @@
+body {
+  margin: 0px;
+  font-family: "Roboto", Arial, Tahoma, Veranda;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 15px;
+}
+.tieude {
+  margin-left: 70px;
+  margin-right: 70px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #0c4ca3;
+}
+nav {
+  background-color: #0c4ca3;
+  margin: 10px;
+  justify-content: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+li {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.banner-adv {
+  display: flex;
+  justify-content: center;
+}
+.adv {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  border-bottom: 12px solid gray;
+  border-radius: 2px;
+}
+.tintuc {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 80px;
+}
+.tintuc-phan {
+  border: 1px solid #b3b3b3;
+  border-radius: 2px;
+  padding: 10px;
+}
+.tintuc-phan img {
+  height: auto;
+  border-radius: 5px;
+}
+
+.tb {
+  background-color: #dedede;
+  padding: 20px;
+}
+
+.thongbao {
+  display: flex;
+  padding: 15px;
+  gap: 100px;
+}
+
+footer {
+  background-color: #001a3f;
+  color: white;
+  text-align: start;
+  padding: 50px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.item {
+  text-align: left;
+}
+
+.td_tuyensinh {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.social {
+  display: block;
+}
+.fb {
+  display: flex;
+  background-color: red;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+}
+
+.banquyen {
+  text-align: right;
+  border-top: 1px solid white;
+  margin-left: 1100px;
+}
+.top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.top li {
+  list-style: none;
+  margin: 0;
+}
+
+.trian {
+  justify-content: center;
+  padding: 50px;
+}
+.content {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: auto;
+}
+.title {
+  display: block;
+  border: 1px dotted white;
+  padding: 30px;
+}
+.cot-trai {
+  width: 50%;
+}
+.cot-phai {
+  width: 50%;
+  height: auto;
+}
