@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script>
+        //chú thích trong js dùng kí tự //
+        document.writeln("hello world "+"<br>");
+        //js muốn nối chuỗi dùng dấu +
+        let hoten = "Pham Quang Huy";
+        document.writeln(hoten +"<br>");
+
+        //hằng 
+        const pi = 3.14;
+
+        let sothunhat = 10;
+        let sothuhai = 5;
+        let kq = 0;
+
+        //+
+        kq = sothunhat + sothuhai;
+        document.writeln(kq +"<br>");
+
+        //-
+        kq = sothunhat - sothuhai;
+        document.writeln(kq +"<br>");      
+        
+        //*
+        kq = sothunhat * sothuhai;
+        document.writeln(kq +"<br>");
+
+        // /
+        kq = sothunhat / sothuhai;
+        document.writeln(kq +"<br>");
+
+        // %
+        kq = sothunhat % sothuhai;
+        document.writeln(kq +"<br>");
+
+        // | += | -= | *= | /= |
+        sothunhat *= sothuhai;
+        document.writeln(sothunhat +"<br>");
+
+        let so1 = 10;
+        let so2 = "10";
+        document.writeln(!(so1 !== so2) +"<br>");
+
+        let ketqua;
+        document.writeln(ketqua +"<br>");
+
+        let thongtinsinhvien = {
+            hoTen: "Dương Trần Nhật Anh",
+            tuoi: 20,
+            gioitinh: true,
+            lop:"khoa học máy tính k68",
+            diachi:{
+
+            }
+        }
+
+        document.writeln("xin chào bạn " + thongtinsinhvien.hoTen +" lớp "+ thongtinsinhvien.lop + "<br>");
+
+        let diachinhatanh = {
+            thanhpho: "Hà Nội",
+            quanhuyen:"Phúc Yên",
+            duong:"Hai Bà Trưng",
+            sonha: 39
+        }
+        thongtinsinhvien.diachi = diachinhatanh;
+
+        document.writeln("xin chào bạn " + thongtinsinhvien.hoTen +" lớp "+ thongtinsinhvien.lop +" nhà ở thành phố"+ thongtinsinhvien.diachi.thanhpho +" phường " + thongtinsinhvien.diachi.quanhuyen +" đường " +thongtinsinhvien.diachi.duong + "<br>");
+        
+        let namnay = 2025;
+        
+
+        thongtinsinhvien.Namsinh = namnay;
+        document.writeln("xin chào bạn " 
+            + thongtinsinhvien.hoTen 
+            +" lớp "+ thongtinsinhvien.lop
+            +" năm sinh:" +(namnay- thongtinsinhvien.tuoi) +"<br>");
+
+        let sothu2 = "10.5";
+        sothu2 = parseFloat(sothu2);
+        document.writeln(sothu2 +"<br>")
+    </script>
+</body>

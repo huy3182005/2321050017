@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tạo tai khoan Facebook</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .hop-chua {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 350px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    
+    .hop-chua h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+      .trang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1877f2;
+    
+  }
+   
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .ngay-sinh, .gioi-tinh {
+      display: flex;
+      gap: 5px;
+    }
+    .gioi-tinh label {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .gioi-tinh input {
+      margin-left: 5px;
+    }
+    .nut {
+      background-color: #42b72a;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .nut:hover {
+      background-color: #36a420;
+    }
+    .link-dang-nhap {
+      display: block;
+      margin-top: 15px;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+   <div class="trang">
+    <h1 class="logo">facebook</h1>
+
+  <div class="hop-chua">
+    <h2>Tạo tài khoản mới</h2>
+    <p>Nhanh chóng và dễ dàng.</p>
+
+    <input type="text" placeholder="Tên">
+    <input type="text" placeholder="Họ">
+
+    <div class="ngay-sinh">
+      <select>
+        
+        <option>30</option>
+        <option>31</option>
+      </select>
+      <select>
+        <option>Tháng 1</option>
+        <option>Tháng 2</option>
+        <option>Tháng 3</option>
+        <option>Tháng 4</option>
+        <option>Tháng 5</option>
+        <option>Tháng 6</option>
+        <option>Tháng 7</option>
+        <option>Tháng 8</option>
+        <option>Tháng 9</option>
+        <option>Tháng 10</option>
+        <option>Tháng 11</option>
+        <option>Tháng 12</option>
+
+      </select>
+      <select>
+        <option>2005</option>
+        <option>2004</option>
+      </select>
+    </div>
+
+  </div>
+</body>
+</html>
