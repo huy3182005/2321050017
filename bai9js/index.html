@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+   <script src="script.js"></script>
+  <script>
+let madonhang = "DH001";
+
+let thongtinkhachhang = {
+    hoTen: "Pham Quang Huy",
+    sdt: "0329394939",
+    trangThaiThanhVienThanThiet: true,
+
+    danhSachSanPham: {
+        caPhe: {
+            maSanPham: "SP001",
+            tenSanPham: "ca phe sua da",
+            soLuong: 31,
+            giaTienMotSanPham: 30000000,
+        },
+        matcha: {
+            maSanPham: "PP01",
+            tenSanPham: "matcha latte",
+            soLuong: 31,
+            giaTienMotSanPham: 30000000,
+        },
+        traSua: {
+            maSanPham: "PP02",
+            tenSanPham: "tra sua tran chau",
+            soLuong: 31,
+            giaTienMotSanPham: 30000000,
+        },
+    },
+    trangThaiThanhToan: true,
+    diaChiGiaoHang: "Ha Noi"
+};
+
+let tongGiaTriDonHang =
+    thongtinkhachhang.danhSachSanPham.caPhe.soLuong *
+    thongtinkhachhang.danhSachSanPham.caPhe.giaTienMotSanPham +
+    thongtinkhachhang.danhSachSanPham.matcha.soLuong *
+    thongtinkhachhang.danhSachSanPham.matcha.giaTienMotSanPham +
+    thongtinkhachhang.danhSachSanPham.traSua.soLuong *
+    thongtinkhachhang.danhSachSanPham.traSua.giaTienMotSanPham;
+
+document.writeln("Tổng giá trị đơn hàng: " + tongGiaTriDonHang + "<br>");
+//string:jsbuoi2
+let hoten = "Pham Quang Huy";
+document.writeln(hoten.length + "<br>");
+
+let mystring = "Hello Kien";
+document.writeln(mystring[4] + "<br>");
+//cat chuoi tu vi tri 1 den vi tri 4
+document.writeln(mystring.slice(1, 4) + "<br>");
+//thay doi chuoi
+document.writeln(mystring.replace("Hello", "hi") + "<br>");
+document.writeln(mystring.replace("", "hi") + "<br>");
+document.writeln(mystring.toLocaleUpperCase() + "<br>");
+//indexof("ki tu can tim trong chuoi")
+document.writeln(mystring.indexOf("i") + "<br>");
+document.writeln(mystring.includes("e") + "<br>");
+//tach chuoi thanh mang
+document.writeln(mystring.split("") + "<br>");
+document.writeln(mystring.split(" ") + "<br>");
+document.writeln(mystring.split("e") + "<br>");
+document.writeln(mystring.startsWith("Hello") + "<br>");
+document.writeln(mystring.endsWith("Kien") + "<br>");
+//kieu number
+let pi = 3.1481381;
+document.writeln(pi.toFixed(2) + "<br>");
+//kiem tra so**********
+document.writeln(isNaN(10) + "<br>");
+document.writeln(isNaN("10") + "<br>");
+//date 
+let today = new Date();
+document.writeln(today + "<br>");
+document.writeln(today.getFullYear() + "<br>");//lay ra nam
+document.writeln(today.getMonth() + "<br>");//lay ra thang
+document.writeln(today.getDate() + "<br>");//lay ra ngay
+document.writeln(today.getDay() + "<br>");//lay ra thu
+document.writeln(today.getHours() + "<br>");//lay ra gio
+document.writeln(today.getMinutes() + "<br>");//lay ra phut
+
+</script>
+</body>
+</html><script>
