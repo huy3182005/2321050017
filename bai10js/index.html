@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="script.js"></script>
+  <script>
+    document.writeln("test" +"<br>");
+    //mảng
+    let arr = [1,2,3,4, 'a', 'b', 'c', 2, 3]
+    let ten = 'ten'
+    let thongtin = {
+      ten: ten,
+    }
+    //kiểm tra mảng
+    document.writeln(Array.isArray(arr) + "<br>");
+    document.writeln(Array.isArray(thongtin) + "<br>");
+
+    //độ dài mảng
+    document.writeln(arr.length + "<br>");
+
+    //lấy phần tử mảng
+    document.writeln(arr[2] + "<br>");
+
+    //kiem tra phần tử trong mảng trả về vị trí đầu tiên xuất hiện
+    document.writeln(arr.indexOf(3) + "<br>");
+    //trả về vị trí cuối cùng xuất hiện
+    document.writeln(arr.lastIndexOf(3) + "<br>");
+    //trả về -1 nếu không tìm thấy
+    document.writeln(arr.indexOf(10) + "<br>");
+    //thay doi phần tử trong mảng
+    arr[3] = 6;
+    document.writeln(arr + "<br>");
+    //noi mảng
+    let a, b, c, d;
+    a = [1,2,3]
+    b = " JavaScript"
+    c = [42, "JS"]
+    d = a.concat(b, c)
+    d = d.join("/")
+    //d.pop() //xóa phần tử cuối mảng
+    document.writeln(d + "<br>");
+
+    //them phan tu vao cuoi mang
+    arr.push("huy")
+    document.writeln(arr + "<br>");
+   //đảo ngược mảng
+    arr.reverse() 
+    document.writeln(arr + "<br>");
+    //them phan tu vao dau mang
+    arr.unshift("hoang")
+    document.writeln(arr + "<br>");
+   //xóa phần tử đầu mảng
+    arr.shift()
+    document.writeln(arr + "<br>");
+    //câu lệnh điều khiển
+    //kiem tra so chan le
+    let so = 100000000000000000000000001;
+    let socuoi = parseInt(so[so.length - 1]);
+
+    if(socuoi % 2 == 0){
+      document.writeln(so + " là số chẵn" + "<br>");
+    }else{
+      document.writeln(so + " là số lẻ" + "<br>");
+    }
+
+    let now = new Date().getHours();
+    document.writeln(now + "<br>");
+
+    if(now>=5 && now <= 10){
+      document.writeln("Chào buổi sáng" + "<br>");
+    }else if(now >=10 && now <= 13){
+      document.writeln("Chào buổi trua" + "<br>");
+    }else if(now >=13 && now <= 17){
+        document.writeln("Chào buổi chieu" + "<br>");
+    }else if(now >=17 && now <= 22){
+        document.writeln("Chào buổi toi" + "<br>");
+    }else{
+        document.writeln("Chào nửa đêm" + "<br>");
+    }
+
+    //a,b,c 
+    let a1 = 8, b1 = 7.5, c1 = 10;
+    let tong = 0;
+    
+    tong = a1*0.6 + b1*0.3 + c1*0.1;
+    document.writeln("Tổng điểm: " + tong + "<br>");
+    if(tong>=8 && tong <=10){
+      document.writeln("Diem A" + "<br>");
+    }else if(tong >= 7 && tong < 8){
+      document.writeln("Diem B" + "<br>");
+    }else if(tong >= 5 && tong < 7){
+      document.writeln("Diem C" + "<br>");
+    }else if(tong > 4 && tong < 5){
+      document.writeln("Diem D" + "<br>");
+    }else{
+      document.writeln("Diem F" + "<br>");
+    }
+
+
+
+  </script>
+</body>
+</html>
