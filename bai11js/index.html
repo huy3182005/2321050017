@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="script.js"></script>
+  <script>
+    let d = new Date();
+    let theDay = d.getDay();
+    switch(theDay){
+     
+      case 5:
+        document.writeln("Thứ sáu" + "<br>");
+        break;
+      case 0:
+        document.writeln("Chủ nhật" + "<br>");
+        break;
+      case 1:
+      case 2:
+      case 3: 
+        document.writeln("Không xác định" + "<br>");
+        break;
+      default:
+        document.writeln("Không xác định" + "<br>");
+    }
+    //vong lap for
+    for(let i = 0; i <= 10; i++){
+      document.writeln("i = " + i + "<br>");
+    }
+    let danhSach = ["Dương Trần Nhật	Anh ", "Dương Vũ	Anh ", "Trần Vũ Hải	Anh ", "Bùi Ngọc	Bích ", "Phạm Quốc	Bình ", "Nguyễn Văn	Chung ", "Hoàng Mạnh	Cường ", "Ngô Hoàng	Dương ", "Phạm Văn	Đại ", "Nguyễn Đình	Đạt ", "Phạm	Đức ", "Vũ Trung	Đức ", "Phạm Hương	Giang ", "Phạm Quang	Hậu ", "Trần Văn	Hiệp ", "Nguyễn Văn	Hoàng ", "Phạm Quốc	Hoàng ", "Phạm Thị	Huế ", "Trần Công	Hùng ", "Đào Thế	Huy ", "Đỗ Quang	Huy ", "Phạm Quang	Huy ", "Phạm Thành	Khang ", "Bùi Văn	Khiêm ", "Nguyễn Tiến	Khởi ", "Đỗ Trung	Kiên ", "Vương Hà	Linh ", "Đào Quang	Lộc ", "Ngô Gia	Lộc ", "Bùi Văn	Mạnh ", "Nguyễn Văn	Mạnh ", "Phan Văn	Mạnh ", "Trương Công	Minh ", "Đỗ Thành	Nam ", "Lê Duy	Nam ", "Nguyễn Hoàng	Nam ", "Nguyễn Anh	Quân ", "Cao Thị Thu	Quyên ", "Phạm Gia	Tài ", "Nguyễn Thị Thanh	Tâm © ", "Nguyễn Đình	Thái ", "Lưu Tiến	Thành ", "Trần Văn	Thành ", "Nguyễn Thị	Thúy ", "Nguyễn Thị	Thúy ", "Bùi Duy	Tiến ", "Nguyễn Văn	Tiến ", "Đỗ Văn	Trung ", "Phạm Đan	Trường ", "Lê Thị Cẩm	Tú ", "Phan Văn	Tuân ", "Cao Thái	Tuấn ", "Nguyễn Duy	Tuấn ", "Nguyễn Huy	Tuấn ", "Thiều Văn	Việt ", "Nguyễn Kiều	Vy"];
+    let dem = 0
+    for(let i = 0; i < danhSach.length; i++){
+      let ho = danhSach[i].startsWith("Phạm");
+      if(ho){
+        document.writeln(i + " Ho: " + danhSach[i] + "<br>");
+      }
+      if(danhSach[i].startsWith("Phạm")==true){
+        dem =  dem + 1;
+      }
+      
+    }
+    document.writeln("Số lượng họ Phạm: " + dem + "<br>");
+    document.writeln("Tổng số sinh viên: " + danhSach.length + "<br>");
+
+    //vong lap while
+    let j = 0;
+    while(j <= 10){
+      document.writeln("j = " + j + "<br>");
+      j++;
+      }
+    //vong lap do while
+    let k = 0;
+    do{
+      document.writeln("k = " + k + "<br>");
+      k++;
+    }while(k <= 10);
+    //popup box
+    alert("Hello huy" + "<br>");
+    let result = confirm("Ban co muon thoat khong?");
+    if(result == true){
+      document.writeln("Ban chon thoat" + "<br>");
+    }else{
+      document.writeln("Ban khong chon thoat" + "<br>");
+    }
+    let ten = prompt("Nhap ten cua ban: ", "Pham Quang Huy");
+    document.writeln("Ten cua ban la: " + ten + "<br>");
+    
+    //function
+    function sayHello(){
+      document.writeln("Hello" + "<br>");
+    }
+    sayHello();
+    let ten1 = prompt("Nhap ten cua ban: ", "Pham Quang Huy" + "<br>");
+    let namsinh1 = prompt("Nhap nam sinh cua ban: ", "2005" + "<br>");
+    function sayHello2(ten, namsinh){
+      document.writeln("Hello " + ten + " " + namsinh + "<br>");
+    }
+    sayHello2("Pham Quang Huy", 2005);
+  
+  </script>
+</body>
+</html>
