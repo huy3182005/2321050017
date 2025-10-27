@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Vòng lặp số</title>
+</head>
+<body>
+  
+  <h1>Tính Tổng</h1>
+  <h2>Biết A*0.6+B*0.3+C*0.1</h2>
+  <div>
+    <p>Nhập A</p>
+    <input type="text" id="so1" value="">
+
+  </div>
+
+  <div>
+    <p>Nhập B</p>
+    <input type="text" id="so2" value="">
+  </div>
+  <div>
+    <p>Nhập C</p>
+    <input type="text" id="so3" value="">
+  </div>
+
+  <div>
+    <button onclick="tinhTong()">Tính Tổng</button>
+  </div>
+
+  <div>
+    Kết quả: <input type="number" id="ketqua" class="ketqua">
+  </div>
+
+  <script>
+  function tinhTong(){
+    let a = parseFloat(document.getElementById("so1").value) ;
+    let b = parseFloat(document.getElementById("so2").value) ;
+    let c = parseFloat(document.getElementById("so3").value) ;
+    let tong = a * 0.6 + b * 0.3 + c * 0.1;
+    document.getElementById("ketqua").value = tong;
+    let canhbao = "";
+    if(!a)
+    {
+      canhbao  += "bạn hãy nhập lại A\n";
+    }
+    if(!b)
+    {
+      canhbao  += "bạn hãy nhập lại B\n";
+    }
+    if(!c)
+    {
+      canhbao  += "bạn hãy nhập lại C\n";
+    }
+    if  (a <= 0 || a >= 10) {
+      canhbao += "Số A phải lớn hơn 0 và nhỏ hơn 10\n";
+    }
+    if  (b <= 0 || b >= 10) {
+      canhbao += "Số B phải lớn hơn 0 và nhỏ hơn 10\n";
+    }
+    if ( c <= 0 || c >= 10){
+      canhbao += "Số C phải lớn hơn 0 và nhỏ hơn 10\n";
+    }
+    if(canhbao)
+    {
+      alert(canhbao);
+    }
+  }
+
+  </script>
+</body>
+</html>
