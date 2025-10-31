@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>ví dụ về thay đổi chế độ</h1>
+        </div>
+        <div>
+            <img class="anh" width="100px" src="image.png" alt="">
+        </div>
+        <div>
+            <h1>chế độ sáng</h1>
+        </div>
+        <div>
+            <button onclick="doicheo()">thay đổi chế độ</button>            
+        </div>
+       
+    </div>
+    <script>
+      let chedo = true;
+
+      function doicheo(){
+            //nếu chế độ đang là sáng
+            if(chedo == true){
+            document.getElementsByTagName('body')[0].style = 'background-color: black';
+            document.getElementsByTagName('h1')[0].style = 'color: yellow';
+            document.getElementsByTagName('h1')[1].style = 'color: white';
+            document.getElementsByTagName('h1')[1].innerHTML = 'chế độ tối';
+            document.getElementsByClassName('anh')[0].src = 'trang.png';
+            chedo = false;
+            }
+            else{
+               document.getElementsByTagName('body')[0].style = 'background-color: white';
+            document.getElementsByTagName('h1')[0].style = 'color: black';
+            document.getElementsByTagName('h1')[1].style = 'color: black';
+            document.getElementsByTagName('h1')[1].innerHTML = 'chế độ sáng';
+            document.getElementsByClassName('anh')[0].src = 'image.png';
+            chedo = true;
+            }
+          
+
+        
+        }
+        /*Tính chỉ số BMI
+Công thức: Cân năng / (Chiều cao * Chiều cao)
+
+Cân nặng: Kg
+
+Chiều cao: m
+
+Tạo input cho phép nhập vào chiều cao cân nặng
+
+Tạo nút bấm kiểm tra chỉ số BMI
+
+Trường hợp 1: Người dùng không nhập hoặc nhập sai thông tin phải cảnh báo
+
+Trường hợp 2: Nhập đúng, hiển thị được chỉ số BMI và hình ảnh tương ứng
+
+        
+    
+    </script>
+</body>
+</html>

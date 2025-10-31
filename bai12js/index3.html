@@ -7,7 +7,6 @@
 <body>
   
   <h1>Tính Tổng</h1>
-  <h2>Biết A*0.6+B*0.3+C*0.1</h2>
   <div>
     <p>Nhập A</p>
     <input type="text" id="so1" value="">
@@ -18,34 +17,25 @@
     <p>Nhập B</p>
     <input type="text" id="so2" value="">
   </div>
-  <div>
-    <p>Nhập C</p>
-    <input type="text" id="so3" value="">
-  </div>
+  
 
   <div>
-    <button onclick="tinhTong()">Tính Tổng</button>
+    <button onclick="tinhToan('tinhtong')">Tính Tổng</button>
   </div>
   
+ 
   <div>
-    Kết quả: <input type="number" id="ketqua" >
-  </div>
-  <div>
-    <button onclick="tinhTong()">Tính hiệu</button>
+    <button onclick="tinhToan('tinhhieu')">Tính hiệu</button>
   </div>
   
-  <div>
-    Kết quả: <input type="number" id="ketqua" >
-  </div>
-  <div>
-    <button onclick="tinhTong()">tính tích</button>
-  </div>
   
   <div>
-    Kết quả: <input type="number" id="ketqua" >
+    <button onclick="tinhToan('tinhtich')">Tính tích</button>
   </div>
+  
+  
   <div>
-    <button onclick="tinhTong()">Tính thương</button>
+    <button onclick="tinhToan('tinhthuong')">Tính thương</button>
   </div>
   
   <div>
@@ -54,13 +44,31 @@
 
 
   <script>
-  function tinhTong(){
+  function tinhToan(pheptinh){
     let a = parseFloat(document.getElementById("so1").value) ;
     let b = parseFloat(document.getElementById("so2").value) ;
-    let c = parseFloat(document.getElementById("so3").value) ;
-    let tong = a * 0.6 + b * 0.3 + c * 0.1;
+    let tong = a + b;
     document.getElementById("ketqua").value = tong;
+    if(pheptinh == 'tinhtong'){
+      let tong = a + b;
+      document.getElementById("ketqua").value = tong;
+    }
+    else if(pheptinh == 'tinhhieu'){
+      let hieu = a - b;
+      document.getElementById("ketqua").value = hieu;
+    }
+    else if(pheptinh == 'tinhtich'){
+      let tich = a * b;
+      document.getElementById("ketqua").value = tich;
+    }
+    else if(pheptinh == 'tinhthuong'){
+      let thuong = a / b;
+      document.getElementById("ketqua").value = thuong;
+    }
+
+
     let canhbao = "";
+
     if(!a)
     {
       canhbao  += "bạn hãy nhập lại A\n";
@@ -69,24 +77,21 @@
     {
       canhbao  += "bạn hãy nhập lại B\n";
     }
-    if(!c)
-    {
-      canhbao  += "bạn hãy nhập lại C\n";
-    }
+   
     if  (a <= 0 || a >= 10) {
       canhbao += "Số A phải lớn hơn 0 và nhỏ hơn 10\n";
     }
     if  (b <= 0 || b >= 10) {
       canhbao += "Số B phải lớn hơn 0 và nhỏ hơn 10\n";
     }
-    if ( c <= 0 || c >= 10){
-      canhbao += "Số C phải lớn hơn 0 và nhỏ hơn 10\n";
-    }
+  
     if(canhbao)
     {
       alert(canhbao);
     }
   }
+
+
 
   </script>
 </body>
