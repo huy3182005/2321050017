@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .container{
-        display: flex;
-        
-        justify-content: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            padding-top: 25%;
+        }
+        body{
+          background-color: aqua;
+        }
+        .bg1{
+          background-color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div>
-        <div>
-            <p>nhập vào chiều cao(m)</p>
-            <input type="text" id="chieucao" value="">
+    <div class="main">
+        <div class="bg1">
+            <div>
+                <p>nhập vào chiều cao(m)</p>
+                <input type="text" id="chieucao">
+            </div>
+            <div>
+                <p>nhập cân nặng(kg) </p>
+                <input type="text" id="cannang">
+            </div>
+            <div>
+                <button onclick="bmi()">tính BMI</button>
+            </div>
+            <div>
+               <p> kết quả </p>
+                <input type="text"  id="kq">
+                <h1></h1>
+            </div>
         </div>
         <div>
-            <p>nhập vào cân nặng(kg)</p>
-            <input type="text" id="cannang" value="">
-        <div>
-            <button onclick="bmi()">tính bmi</button>            
+            <img class="images" width="125px" height="250px" src="image.png" alt="">
         </div>
-        <div>
-            <p>kết quả</p>
-            <input type ="text" id="ketqua" value="">
-        </div>
-     </div>
-     <div>   
-        <div>
-            <img class="images" width="200px" src="image.png" alt="">
-        </div>
-      </div>
-  </div>
-  <script>
-    function bmi(){
-        let chieucao = parseFloat(document.getElementById("chieucao").value);
-        let cannang = parseFloat(document.getElementById("cannang").value);
-        let ketqua = cannang / (chieucao * chieucao);
-        document.getElementById("ketqua").value = ketqua;
-    }
-    let canhbao = "";
-    if(!chieucao)
-    {
-      canhbao  += "bạn hãy nhập lại chiều cao\n";
-    }
-    if(!cannang)
-    {
-      canhbao  += "bạn hãy nhập lại cân nặng\n";
-    }
-    if(canhbao)
-    {
-      alert(canhbao);
-    }
-    let tinh=cannang/(chieucao*chieucao);
-    document.getElementById("images").value = tinh;
-    if(tinh<18.5){
-        document.getElementsByClassName("images").src = "thieucan.png";
-    }
-    else if(tinh>=18.5 && tinh<24.9){
-        document.getElementsByClassName("images").src = "binhthuong.png";
-    }
-    else if(tinh>=25 && tinh<29.9){
-        document.getElementsByClassName("images").src = "thuacan.png";
-    }
-    else if(tinh >=30 && tinh<39.9){
-        document.getElementsByClassName("images").src = "beophi12.png";
-    }
-    
-    else{
-        document.getElementsByClassName("images").src = "beophinang.png";
-    }
-    
-  </script>
+    </div>
 
+    <script>
+        function bmi(){
+            let cao = parseFloat(document.getElementById('chieucao').value);
+            let nang = parseFloat(document.getElementById('cannang').value);
+            let canhbao="";
+            if(!cao){
+                canhbao+="vui lòng nhập đúng giá trị chiều cao\n"
+            }
+            if(!nang){
+                canhbao+="vui lòng nhập đúng giá trị cân nặng\n"
+            }
+            if(canhbao){
+                alert(canhbao);
+            }
+            let tinh = nang/(cao*cao);
+            document.getElementById('kq').value = tinh.toFixed(2);
+            if(tinh< 18.5){
+                document.getElementsByClassName('images')[0].src ="thieucan.png";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn bị thiếu cân"
+            }
+            else if(tinh >= 18.5 && tinh <25){
+                document.getElementsByClassName('images')[0].src ="binhthuong.png";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn đủ cân"
+            }
+            else if(tinh >= 25 && tinh < 30){
+                document.getElementsByClassName('images')[0].src ="thuacan.png";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn thừa cân"
+            }
+            else if(tinh >=30 && tinh < 40){
+                document.getElementsByClassName('images')[0].src ="beophi12.png";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn bị béo phì nhẹ"
+            }
+            else if(tinh >=40){
+                document.getElementsByClassName('images')[0].src ="beophinang.png";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn bị béo phì nặng"
+            }
+        }
+    </script>
 </body>
 </html>
