@@ -94,6 +94,50 @@
         #xoá
         unset($mang[3]);
         print_r($mang);
+        #sắp xếp mảng
+        $mangg = ["C","B","D","A"];
+        print_r($mangg);
+        echo "<br>";
+        #sx tăng
+        sort($mangg);
+        print_r($mangg);
+        #sx giảm
+        echo "<br>";
+        rsort($mangg);
+        print_r($mangg);
+
+        //11. kiểm tra xem biến có tồn tại hay không
+        $bienA = "hello";
+        isset($bienA);//true
+        isset($bienB);//false
+
+        if(isset($bienA)){
+          echo "bien nay co ton tai "."<br>";
+        }
+
+        //check empty
+        $check = "";
+        if(empty($check)){
+          echo "empty";
+        }
+        else{
+          echo "no empty";
+        }
+
+        //12. Hàm
+        #không tham số
+        function xinChao(){
+          return "hello";
+        }
+        //echo xinChao();
+
+        # có tham số
+          function xinChao2(){
+          return "hello " . $ten;
+        }
+        echo xinChao2("huy");
+
+
     ?>
 </body>
 </html>
